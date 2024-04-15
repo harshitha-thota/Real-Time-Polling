@@ -43,9 +43,9 @@ function App() {
                 <form className="d-flex flex-column my-5" onSubmit={handleSubmit}>
                     <input className='form-control mb-4' type='email' placeholder='Email Address' value={credentials.email} onChange={onChange} name="email" />
                     <input className='form-control mb-4' type='password' placeholder='Password' value={credentials.password} onChange={onChange} name="password" />
-                    <div className="d-flex justify-content-between align-items-center pb-3">
+                    {/* <div className="d-flex justify-content-between align-items-center pb-3">
                         <a href="!#" className="forgot-password-link text-blue">Forgot password?</a>
-                    </div>
+                    </div> */}
                     <button type="submit" className="btn btn-primary btn-block mb-4">Sign in</button>
                     {errorMessage && <div className="alert alert-danger" role="alert">{errorMessage}</div>}
                     <div className="text-center">
